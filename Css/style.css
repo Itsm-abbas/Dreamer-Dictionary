@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 6rem;
+}
+
+#speechpart {
+    margin-left: 9rem !important;
+}
+
+h5 {
+    margin: 0;
+}
+
+#maincontainer {
+    margin-top: 1rem;
+    width: 30rem;
+    border-radius: 1rem;
+}
+
+#inputcontainer {
+    height: 5rem;
+}
+
+.inputsearch {
+    position: relative;
+}
+
+#searchbtn {
+    position: absolute;
+    right: 29px;
+    top: .4rem;
+}
+
+#searchbtn:focus {
+    outline: none;
+}
+
+#searchbtn:hover {
+    background-color: white;
+    color: rgb(13, 110, 253);
+}
+
+#searchresult {
+    padding: 0 0 1rem 2rem;
+    display: none;
+}
+
+#audio {
+    width: 24.8rem;
+    height: 3.5rem;
+}
+
+audio::-webkit-media-controls-play-button {
+    width: 5rem;
+    height: 2rem;
+    background-color: #B1D4E0;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    display: none;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+#error {
+    display: block;
+    width: 19rem;
+    text-align: center;
+    margin: 0 auto;
+    padding: 1rem;
+    display: none;
+}
+
+
+@media screen and (max-width:500px) {
+    #maincontainer {
+        width: 23rem;
+    }
+
+    #searchbtn {
+        top: .4rem;
+        right: 1rem;
+    }
+
+    #inputcontainer {
+        height: 5rem;
+    }
+    #audio {
+        width: 17.8rem;
+        height: 3.5rem;
+    }
+}
